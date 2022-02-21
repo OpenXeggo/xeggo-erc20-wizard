@@ -119,32 +119,32 @@ async function fetchAccountData() {
         simpleTokenInstance.events.TokenCreated().on("data", function(event) {
                 console.log(event);
                 let tokenAddress = event.returnValues._token;
-                $("#EventEmitted").css("display", "block")
-                $("#EventEmitted").text(`Your Token with address (${tokenAddress}) has been created.`)
+                $("#EventEmitted").css("display", "flex")
+                $("#EventMessage").text(`Your Token with address (${tokenAddress}) has been created. Please copy address and import token to your metamask wallet.`)
             })
             .on("error", console.error)
 
         burnTokenInstance.events.TokenCreated().on("data", function(event) {
                 console.log(event);
                 let tokenAddress = event.returnValues._token;
-                $("#EventEmitted").css("display", "block")
-                $("#EventEmitted").text(`Your Token with address (${tokenAddress}) has been created.`)
+                $("#EventEmitted").css("display", "flex")
+                $("#EventMessage").text(`Your Token with address (${tokenAddress}) has been created. Please copy address and import token to your metamask wallet.`)
             })
             .on("error", console.error)
 
         capTokenInstance.events.TokenCreated().on("data", function(event) {
                 console.log(event);
                 let tokenAddress = event.returnValues._token;
-                $("#EventEmitted").css("display", "block")
-                $("#EventEmitted").text(`Your Token with address (${tokenAddress}) has been created.`)
+                $("#EventEmitted").css("display", "flex")
+                $("#EventMessage").text(`Your Token with address (${tokenAddress}) has been created. Please copy address and import token to your metamask wallet.`)
             })
             .on("error", console.error)
 
         unlimitedTokenInstance.events.TokenCreated().on("data", function(event) {
                 console.log(event);
                 let tokenAddress = event.returnValues._token;
-                $("#EventEmitted").css("display", "block")
-                $("#EventEmitted").text(`Your Token with address (${tokenAddress}) has been created.`)
+                $("#EventEmitted").css("display", "flex")
+                $("#EventMessage").text(`Your Token with address (${tokenAddress}) has been created. Please copy address and import token to your metamask wallet.`)
             })
             .on("error", console.error)
     }
